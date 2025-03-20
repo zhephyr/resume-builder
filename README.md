@@ -24,7 +24,7 @@ Simple resume builder with optional cover letter generation using OpenAI
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+* python (https://www.python.org/downloads/)
 * npm
   ```sh
   npm install npm@latest -g
