@@ -1,0 +1,21 @@
+@import "../../../globals.css";
+
+#tag {
+    display: inline-block;
+    margin: .5rem .25rem;
+    padding: .5rem .75rem;
+    width: fit-content;
+    background-color: var(--color-primary);
+    border-width: 1px;
+    border-radius: 2rem;
+    border-color: var(--color-accent);
+    color: var(--color-background);
+    text-align: center;
+}
+
+#tag span {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    vertical-align: sub;
+    line-height: 84%;
+}

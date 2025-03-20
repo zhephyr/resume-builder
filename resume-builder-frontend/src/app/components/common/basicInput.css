@@ -1,0 +1,32 @@
+/* Make shadowDom placeholder transparent */
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+    color: transparent;
+    position: relative;
+    left: 0.75rem;
+}
+
+/* Make text appear when focused on any part */
+input[type="date"]:focus::-webkit-datetime-edit-text,
+input[type="date"]:focus::-webkit-datetime-edit-month-field,
+input[type="date"]:focus::-webkit-datetime-edit-day-field,
+input[type="date"]:focus::-webkit-datetime-edit-year-field {
+    color: var(--text);
+}
+
+/* Make highlighting appear for only the field focus is on */
+input[type="date"]::-webkit-datetime-edit-month-field:focus,
+input[type="date"]::-webkit-datetime-edit-day-field:focus,
+input[type="date"]::-webkit-datetime-edit-year-field:focus {
+    background-color: var(--accent);
+}
+
+/* Make text appear when date is filled */
+.filled::-webkit-datetime-edit-text,
+.filled::-webkit-datetime-edit-month-field,
+.filled::-webkit-datetime-edit-day-field,
+.filled::-webkit-datetime-edit-year-field {
+    color: var(--text) !important;
+}
